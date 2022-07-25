@@ -1,0 +1,128 @@
+@import '../../utils/utils';
+
+.footer {
+  padding: 56px 0;
+  background-color: #3f3e46;
+
+  &__content {
+    display: grid;
+
+    @include onTablet {
+      grid-template-columns: 1fr 3fr;
+    }
+
+    @include onLaptop {
+      grid-template-columns: 2fr 3fr;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 16px;
+  }
+
+  &__logo-link {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: color 0.5s ease;
+
+    &:hover {
+      color: #8fc5ae;
+    }
+  }
+
+  &__nav {
+    display: grid;
+
+    @include onTablet {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__list {
+    margin-bottom: 16px;
+  }
+
+  &__item {
+    color: #fff;
+
+    &--title {
+      margin-bottom: 16px;
+
+      color: #8fc5ae;
+      text-transform: uppercase;
+    }
+  }
+
+  &__sub-list--links li:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  &__sub-list--contact-us li:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &__sub-link {
+    color: #fff;
+    transition: color 0.5s ease;
+
+    &:hover {
+      color: #8fc5ae;
+    }
+  }
+
+  &__whatsApp-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    transition: color 0.5s ease;
+
+    &:hover {
+      color: #8fc5ae;
+    }
+
+    img {
+      margin-right: 10px;
+      width: 14px;
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    justify-content: center;
+    
+    @include onTablet {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+
+  &__social-item {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
+
+    &:hover {
+      background-color: #8fc5ae;
+      transform: scale(1.1);
+    }
+
+    img {
+      width: 12px;
+    }
+  }
+}

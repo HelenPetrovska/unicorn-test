@@ -1,12 +1,13 @@
-@import '../../styles/utils';
+@import '../../utils/utils';
 
 .service {
   width: 100%;
 
   &__wrapper {
     padding: 20px;
+    height: 100%;
     background-color: #f4f4f4;
-    transition: background-color 0.5s ease, color 0.5s ease;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 
     cursor: pointer;
 
@@ -18,6 +19,10 @@
       .service__subtitle {
         color: #fff;
       }
+    }
+
+    @include onLaptop {
+      height: auto;
     }
   }
 
