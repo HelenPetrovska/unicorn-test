@@ -1,4 +1,5 @@
 import React from 'react';
+import { Plan } from '../../types';
 
 import './Service.scss';
 
@@ -28,9 +29,7 @@ export const Service: React.FC<Props> = ({ service }) => {
         </div>
 
         <div className="service__price">
-          £
-          {' '}
-          {price}
+          {`£ ${price}`}
         </div>
 
         <h3 className="service__title">
@@ -50,9 +49,7 @@ export const Service: React.FC<Props> = ({ service }) => {
         </p>
 
         <div className="service__cashback">
-          £
-          {' '}
-          {cashback}
+          {`£ ${cashback}`}
         </div>
 
         <div className="service__cashback-title">

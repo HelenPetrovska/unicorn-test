@@ -14,7 +14,7 @@ export const Footer: React.FC = () => {
             <ul className="footer__list">
               <li className="footer__item footer__item--title">USEFUL LINKS</li>
               <li className="footer__item">
-                <ul className="footer__sub-list footer__sub-list--links">
+                <ul className="footer__sub-list">
                   <li className="footer__sub-item">
                     <a href="#" className="footer__sub-link">Cookie Policy</a>
                   </li>
@@ -36,7 +36,7 @@ export const Footer: React.FC = () => {
             <ul className="footer__list">
               <li className="footer__item footer__item--title">contact us</li>
               <li className="footer__item">
-                <ul className="footer__sub-list footer__sub-list--contact-us">
+                <ul className="footer__sub-list">
                   <li className="footer__sub-item">
                     Turner Little Limited
                     <br />

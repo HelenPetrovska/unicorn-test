@@ -56,10 +56,10 @@
     }
   }
 
-  &__sub-list--links li:not(:last-child) {
+  &__sub-list:first-child li:not(:last-child) {
     margin-bottom: 8px;
   }
-  &__sub-list--contact-us li:not(:last-child) {
+  &__sub-list:nth-child(2) li:not(:last-child) {
     margin-bottom: 16px;
   }
 
